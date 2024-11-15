@@ -17,6 +17,8 @@ const Portfolio = () => {
     };
     getMyProjects();
   }, []);
+
+  // console.log(projects);
   
   return (
     <div>
@@ -31,7 +33,7 @@ const Portfolio = () => {
         >
           MY{" "}
           <span className="text-tubeLight-effect font-extrabold">
-            PORTFOLIO
+            PROJECTS
           </span>
         </h1>
         <h1
@@ -56,6 +58,9 @@ const Portfolio = () => {
                     src={element.projectBanner && element.projectBanner.url}
                     alt={element.title}
                   />
+                  <p className="text-muted-foreground text-center">
+                    {element.title}
+                  </p>
                 </Link>
               );
             })
@@ -67,10 +72,14 @@ const Portfolio = () => {
                     src={element.projectBanner && element.projectBanner.url}
                     alt={element.title}
                   />
+                  <p className="text-muted-foreground text-center">
+                  {element.title}
+                  </p>
                 </Link>
               );
             })}
       </div>
+
       {projects && projects.length > 9 && (
         <div className="w-full text-center my-9">
           <Button className="w-52" onClick={() => setViewAll(!viewAll)}>
