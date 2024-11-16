@@ -7,6 +7,7 @@ import About from "./miniComponents/About";
 import { ThemeProvider } from "@/components/theme-provider";
 import Portfolio from "./miniComponents/Portfolio";
 import Contact from "./miniComponents/Contact";
+import Coding from "./miniComponents/Coding";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Skills />
       <Portfolio />
       <MyApps />
+      <Coding/>
       <Contact />
     </article>
   );
