@@ -4,6 +4,7 @@ import gfg from "../asserts/gfg.png";
 import codechef from "../asserts/codechef.jpg";
 import leetcode from "../asserts/leetcode.png";
 import ninja from "../asserts/ninja.png";
+import {Link} from 'react-router-dom';
 
 
 export default function Coding() {
@@ -58,12 +59,12 @@ export default function Coding() {
               >
 
                 
-              
+              <Link to = {element.profileUrl} target="_blanck">
                 <img
                   src={element.icons}
                   alt={element.name}
                   className="h-12 sm:h-24 w-auto"
-                />
+                  />
                 <p className="text-muted-foreground text-center">
                   {element.name}
                 </p>
@@ -72,6 +73,7 @@ export default function Coding() {
                   {element.heightLight}
                 </p>
 
+                  </Link>
               </Card>
             );
           })}
