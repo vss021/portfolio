@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const About = () => {
   return (
@@ -17,17 +17,17 @@ const About = () => {
         <span className="absolute w-full h-1 top-7 sm:top-7 md:top-8 lg:top-11 z-[-1] bg-slate-200"></span>
       </div>
       <div className="text-center">
-        <p className="uppercase text-xl text-slate-400">
+        <p className="uppercase text-xl text-slate-600">
           Allow me to introduce myself.
         </p>
       </div>
       <div>
-        <div className="grid md:grid-cols-2 my-8 sm:my-20 gap-14">
+        <div className="grid md:grid-cols-2 my-8 sm:my-20 gap-14 px-4 sm:px-8">
           <div className="flex justify-center items-center">
             <img
               src="/me.png"
-              alt="avatar"
-              className="bg-white p-2 sm:p-4 rotate-[25deg] h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px]"
+              alt="Vijay Singh Saud"
+              className="bg-white p-2 sm:p-4 rotate-[25deg] h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px] shadow-lg"
             />
           </div>
           <div className="flex justify-center flex-col tracking-[1px] text-xl gap-5">
@@ -35,7 +35,7 @@ const About = () => {
               I'm Vijay Singh Saud, a Computer Science Engineering graduate from
               Uttarakhand Technical University, passionate about coding and
               development. I’m always seeking ways to improve my skills and am
-              driven by a commitment to continuous learning
+              driven by a commitment to continuous learning.
             </p>
             <p>
               As I start my career, I’m excited to embrace new challenges and
@@ -43,7 +43,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <p className="tracking-[1px] text-xl">
+        <p className="tracking-[1px] text-xl text-slate-600">
           With a dedication to technology and innovation, I’m ready to
           contribute, learn, and grow, bringing fresh perspectives to each
           opportunity. I pride myself on my commitment to meeting deadlines and

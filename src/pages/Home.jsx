@@ -2,10 +2,9 @@ import React from "react";
 import Hero from "./miniComponents/Hero";
 import Timeline from "./miniComponents/Timeline";
 import Skills from "./miniComponents/Skills";
-import MyApps from "./miniComponents/MyApps";
+import MyApps from "./miniComponents/ToolsAndTechs";
 import About from "./miniComponents/About";
-import { ThemeProvider } from "@/components/theme-provider";
-import Portfolio from "./miniComponents/Portfolio";
+import Portfolio from "./miniComponents/Projects";
 import Contact from "./miniComponents/Contact";
 import Coding from "./miniComponents/Coding";
 

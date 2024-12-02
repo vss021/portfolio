@@ -19,9 +19,12 @@ const ProjectView = () => {
   useEffect(() => {
     const getProject = async () => {
       await axios
-        .get(`https://portfolio-backend-wptf.onrender.com/api/v1/project/get/${id}`, {
-          withCredentials: true,
-        })
+        .get(
+          `https://portfolio-backend-p9yq.onrender.com/api/v1/project/get/${id}`,
+          {
+            withCredentials: true,
+          }
+        )
         .then((res) => {
           setTitle(res.data.project.title);
           setDescription(res.data.project.description);
@@ -65,7 +68,9 @@ const ProjectView = () => {
               </div>
               <div className="mt-10 flex flex-col gap-5">
                 <div className="w-full sm:col-span-4">
-                  <h1 className="text-2xl font-bold mb-4">{title}</h1>
+                  <h1 className="text-2xl font-bold mb-4 text-white">
+                    {title}
+                  </h1>
                   <img
                     src={
                       projectBannerPreview
@@ -77,31 +82,37 @@ const ProjectView = () => {
                   />
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Description:</p>
+                  <p className="text-2xl mb-2 text-white">Description:</p>
                   <ul className="list-disc">
                     {descriptionList.map((item, index) => (
-                      <li key={index}>{item}</li>
+                      <li key={index} className="text-white">
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Technologies:</p>
+                  <p className="text-2xl mb-2 text-white">Technologies:</p>
                   <ul className="list-disc">
                     {technologiesList.map((item, index) => (
-                      <li key={index}>{item}</li>
+                      <li key={index} className="text-white">
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Stack:</p>
-                  <p>{stack}</p>
+                  <p className="text-2xl mb-2 text-white">Stack:</p>
+                  <p className="text-white">{stack}</p>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Deployed:</p>
-                  <p>{deployed}</p>
+                  <p className="text-2xl mb-2 text-white">Deployed:</p>
+                  <p className="text-white">{deployed}</p>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Github Repository Link:</p>
+                  <p className="text-2xl mb-2 text-white">
+                    Github Repository Link:
+                  </p>
                   <Link
                     className="text-sky-700"
                     target="_blank"
@@ -111,7 +122,7 @@ const ProjectView = () => {
                   </Link>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <p className="text-2xl mb-2">Project Link:</p>
+                  <p className="text-2xl mb-2 text-white">Project Link:</p>
                   <Link
                     className="text-sky-700"
                     target="_blank"
