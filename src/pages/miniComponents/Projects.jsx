@@ -46,7 +46,9 @@ const Projects = () => {
           }}
         >
           MY{" "}
-          <span className="text-tubeLight-effect font-extrabold">
+          <span className="gap-4  text-[2rem] sm:text-[2.75rem] text-center 
+          md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] 
+          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold about-h1">
             PROJECTS
           </span>
         </h1>

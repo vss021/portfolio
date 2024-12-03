@@ -12,12 +12,12 @@ const About = () => {
             background: "hsl(222.2 84% 4.9%)",
           }}
         >
-          ABOUT <span className="text-tubeLight-effect font-extrabold">ME</span>
+          ABOUT ME
         </h1>
         <span className="absolute w-full h-1 top-7 sm:top-7 md:top-8 lg:top-11 z-[-1] bg-slate-200"></span>
       </div>
       <div className="text-center">
-        <p className="uppercase text-xl text-slate-600">
+        <p className="uppercase text-xl text-slate-100">
           Allow me to introduce myself.
         </p>
       </div>
@@ -43,7 +43,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <p className="tracking-[1px] text-xl text-slate-600">
+        <p className="tracking-[1px] text-xl text-slate-200">
           With a dedication to technology and innovation, I’m ready to
           contribute, learn, and grow, bringing fresh perspectives to each
           opportunity. I pride myself on my commitment to meeting deadlines and
