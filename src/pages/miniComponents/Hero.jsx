@@ -27,7 +27,7 @@ const Hero = () => {
   }, []);
 
   // user?.resume && user?.resume?.url
-  const resumeUrl = user?.resume?.url || https://drive.google.com/file/d/11eyVZ9uauudCFulKiiEf1JFs3RWazLMu/view?usp=drive_link 
+  const resumeUrl = https://drive.google.com/file/d/11eyVZ9uauudCFulKiiEf1JFs3RWazLMu/view?usp=drive_link 
   
   return (
     <div className="w-full">
