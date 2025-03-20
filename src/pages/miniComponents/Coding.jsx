@@ -48,7 +48,7 @@ export default function Coding() {
     <div className="w-full flex flex-col gap-8 sm:gap-12 px-4 overflow-x-hidden ">
       <h1 className="gap-4  text-[2rem] sm:text-[2.75rem] text-center 
           md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] 
-          lg:leading-[90px] tracking-[5px] mx-auto w-fit font-extrabold  about-h1">
+          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold about-h1">
         Coding Platforms
       </h1>
       <div className="text-center mb-8">
