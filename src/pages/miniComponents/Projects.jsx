@@ -13,7 +13,7 @@ const Projects = () => {
     const getMyProjects = async () => {
       try {
         const { data } = await axios.get(
-          "https://portfolio-backend-p9yq.onrender.com/api/v1/project/getall",
+          "https://portfolio-backend-gc3w.onrender.com/api/v1/project/getall",
           { withCredentials: true }
         );
         setProjects(data.projects);

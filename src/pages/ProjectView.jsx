@@ -20,7 +20,7 @@ const ProjectView = () => {
     const getProject = async () => {
       await axios
         .get(
-          `https://portfolio-backend-p9yq.onrender.com/api/v1/project/get/${id}`,
+          `https://portfolio-backend-gc3w.onrender.com/api/v1/project/get/${id}`,
           {
             withCredentials: true,
           }
