@@ -28,7 +28,7 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-screen overflow-x-hidden">
         <div className="spinner-border animate-spin border-4 border-t-4 border-blue-500 rounded-full w-16 h-16"></div>
       </div>
     ); // Display loading spinner while fetching data
@@ -68,8 +68,9 @@ const Projects = () => {
         </h1>
         <span className="absolute w-full h-1 top-7 sm:top-7 md:top-8 lg:top-11 z-[-1] bg-slate-200"></span>
       </div>
+
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {viewAll
           ? projects.map((element) => (
               <Link

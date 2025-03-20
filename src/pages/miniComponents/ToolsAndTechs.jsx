@@ -24,11 +24,11 @@ const ToolsAndTechs = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col gap-8 sm:gap-12 py-12 px-4 bg-gradient-to-r from-zinc-900 via-zinc-800 to-gry-100">
+    <div className="w-full flex flex-col gap-8 sm:gap-12 py-12 px-4 bg-gradient-to-r from-zinc-900 via-zinc-800 to-gry-100 overflow-x-hidden">
       <h1
-        className="gap-4  text-[2rem] sm:text-[2.75rem] text-center 
-          md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] 
-          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold about-h1"
+        className="gap-4  text-[1.5rem] sm:text-[2.75rem] text-center 
+          md:text-[3rem] lg:text-[3.8rem]  md:leading-[56px] 
+          lg:leading-[90px] tracking-[5px] mx-auto w-fit font-extrabold about-h1"
       >
         My Tools & Technologies
       </h1>

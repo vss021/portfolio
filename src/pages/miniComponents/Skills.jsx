@@ -24,7 +24,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center gap-10 sm:gap-16 px-4 sm:px-8 py-12 max-w-screen-xl mx-auto">
+    <div className="w-full flex flex-col items-center gap-10 sm:gap-16 px-4 sm:px-8 py-12 max-w-screen-xl mx-auto overflow-x-hidden">
       {/* Title */}
       <h1 className="text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-wide">
         SKILLS

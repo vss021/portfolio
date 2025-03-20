@@ -21,7 +21,7 @@ export default function Coding() {
     {
       icons: leetcode,
       name: "LeetCode",
-      profileUrl: "https://www.leetcode.com/saud_vijay_021/",
+      profileUrl: "https://leetcode.com/u/vijay_singh021/",
       heightLight: "600+ Problems Solved",
       description:
         "LeetCode is one of the most popular platforms for preparing for technical interviews, offering a wide range of algorithmic problems and coding challenges.",
@@ -29,7 +29,7 @@ export default function Coding() {
     {
       icons: codechef,
       name: "CodeChef",
-      profileUrl: "https://www.codechef.com/users/saud_vijay_021/",
+      profileUrl: "https://www.codechef.com/users/saudvijay",
       heightLight: "300+ Problems Solved",
       description:
         "CodeChef is a competitive programming platform that hosts monthly contests and provides challenges for developers to sharpen their coding skills.",
@@ -45,10 +45,10 @@ export default function Coding() {
   ];
 
   return (
-    <div className="w-full flex flex-col gap-8 sm:gap-12 px-4">
+    <div className="w-full flex flex-col gap-8 sm:gap-12 px-4 overflow-x-hidden ">
       <h1 className="gap-4  text-[2rem] sm:text-[2.75rem] text-center 
           md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] 
-          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold about-h1">
+          lg:leading-[90px] tracking-[5px] mx-auto w-fit font-extrabold  about-h1">
         Coding Platforms
       </h1>
       <div className="text-center mb-8">
@@ -56,7 +56,7 @@ export default function Coding() {
           These are some of the top platforms where I have solved coding problems to improve my skills and prepare for technical interviews.
         </p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4">
         {platform &&
           platform.map((element, index) => {
             return (

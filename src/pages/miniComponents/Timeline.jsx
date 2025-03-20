@@ -32,7 +32,7 @@ const Timeline = () => {
   }
 
   return (
-    <div className="max-w-screen-lg mx-auto px-4 sm:px-6 py-8">
+    <div className="max-w-screen-lg mx-auto px-4 sm:px-6 py-8 overflow-x-hidden">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-white mb-8">
         Timeline
       </h1>
@@ -50,7 +50,7 @@ const Timeline = () => {
                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
               </svg>
             </span>
-            <h3 className="mb-1 text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="mb-1 text-xl font-semibold text-white">
               {element.title}
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">

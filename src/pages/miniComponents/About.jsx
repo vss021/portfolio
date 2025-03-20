@@ -5,9 +5,9 @@ const About = () => {
     <div className="w-full flex flex-col overflow-x-hidden">
       <div className="relative">
         <h1
-          className="flex gap-4 items-center text-[2rem] sm:text-[2.75rem] 
+          className="flex gap-4 text-[2rem] sm:text-[2.75rem] 
           md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] 
-          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-extrabold about-h1"
+          lg:leading-[90px] tracking-[5px] m-auto w-fit font-extrabold about-h1"
           style={{
             background: "hsl(222.2 84% 4.9%)",
           }}
@@ -21,13 +21,14 @@ const About = () => {
           Allow me to introduce myself.
         </p>
       </div>
+
       <div>
         <div className="grid md:grid-cols-2 my-8 sm:my-20 gap-14 px-4 sm:px-8">
           <div className="flex justify-center items-center">
             <img
               src="/me.png"
               alt="Vijay Singh Saud"
-              className="bg-white p-2 sm:p-4 rotate-[25deg] h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px] shadow-lg"
+              className=" p-2 sm:p-4  h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px] shadow-lg"
             />
           </div>
           <div className="flex justify-center flex-col tracking-[1px] text-xl gap-5">
