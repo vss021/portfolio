@@ -20,7 +20,7 @@ const ProjectView = () => {
     const getProject = async () => {
       await axios
         .get(
-          `https://portfolio-backend-gc3w.onrender.com/api/v1/project/get/${id}`,
+          `http://localhost:4040/api/v1/project/get/${id}`,
           {
             withCredentials: true,
           }
