@@ -16,7 +16,7 @@ const Contact = () => {
     
     await axios
       .post(
-        "http://localhost:4040/api/v1/message/send",
+        "https://portfolio-backend-gc3w.onrender.com/api/v1/message/send",
         { senderName, subject, message },
         {
           withCredentials: true,
