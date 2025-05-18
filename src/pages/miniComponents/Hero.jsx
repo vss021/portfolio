@@ -5,9 +5,8 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-  Youtube,
 } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 import { Button } from "@/components/ui/button";
@@ -22,13 +21,20 @@ const Hero = () => {
         "https://portfolio-backend-gc3w.onrender.com/api/v1/user/me",
         { withCredentials: true }
       );
+
+      
       setUser(data.user);
     };
     getMyProfile();
   }, []);
 
   // user?.resume && user?.resume?.url
-  const resumeUrl = "https://drive.google.com/file/d/11eyVZ9uauudCFulKiiEf1JFs3RWazLMu/view?usp=drive_link";
+  let resumeUrl = "https://drive.google.com/file/d/11eyVZ9uauudCFulKiiEf1JFs3RWazLMu/view?usp=drive_link";
+
+  if(user?.resume?.url){
+    resumeUrl = user?.resume?.url;
+  }
+
   
   return (
     <div className="w-full overflow-x-hidden">
