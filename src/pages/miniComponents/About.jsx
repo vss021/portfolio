@@ -1,5 +1,4 @@
-import React from "react";
-import Img from "../asserts/img.JPG";
+import Img from "../asserts/vijay.png";
 
 
 const About = () => {
