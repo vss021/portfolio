@@ -1,4 +1,6 @@
 import React from "react";
+import Img from "../asserts/img.JPG";
+
 
 const About = () => {
   return (
@@ -26,7 +28,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 my-8 sm:my-20 gap-14 px-4 sm:px-8">
           <div className="flex justify-center items-center">
             <img
-              src="/img.JPG"
+              src={Img}
               alt="Vijay Singh Saud"
               className=" p-2 sm:p-4  h-[240px] sm:h-[340px] md:h-[350px] lg:h-[450px] shadow-lg"
             />
