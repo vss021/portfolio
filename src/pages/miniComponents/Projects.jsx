@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -96,7 +95,7 @@ const Projects = () => {
                 className="group  relative block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all"
               >
                 <img
-                  src={element.projectBanner?.url}
+                  src={element.projectBanner[0]?.url} // Updated to match the data structure
                   alt={element.title}
                   className="h-48 w-full object-cover group-hover:scale-105 transition-transform"
                 />
