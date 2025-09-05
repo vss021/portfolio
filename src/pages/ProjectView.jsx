@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -12,7 +12,6 @@ const ProjectView = () => {
   const [gitRepoLink, setGitRepoLink] = useState("");
   const [deployed, setDeployed] = useState("");
   const [projectLink, setProjectLink] = useState("");
-  const [projectBanner, setProjectBanner] = useState("");
   const [projectBannerPreview, setProjectBannerPreview] = useState("");
   const { id } = useParams();
 
@@ -33,11 +32,8 @@ const ProjectView = () => {
           setTechnologies(res.data.project.technologies);
           setGitRepoLink(res.data.project.gitRepoLink);
           setProjectLink(res.data.project.projectLink);
-          setProjectBanner(
-            res.data.project.projectBanner && res.data.project.projectBanner.url
-          );
           setProjectBannerPreview(
-            res.data.project.projectBanner && res.data.project.projectBanner.url
+            res.data.project.projectBanner && res.data.project.projectBanner[0]?.url
           );
         })
         .catch((error) => {

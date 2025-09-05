@@ -78,7 +78,7 @@ const Projects = () => {
                 className="group relative block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all"
               >
                 <img
-                  src={element.projectBanner?.url}
+                  src={element.projectBanner[0]?.url}
                   alt={element.title}
                   className="h-48 w-full object-cover group-hover:scale-105 transition-transform"
                 />
